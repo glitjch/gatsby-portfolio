@@ -2,17 +2,11 @@
   display: flex;
   justify-content: center;
 
-
-  /* position: fixed; */
-  /* top: 0; */
-  /* left: 0; */
-  z-index: 5;
-
   min-height: 5rem;
-
   width: 100%;
 
-  /* background-color: bisque; */
+  background-color: rgba(6, 17, 59, 1);
+
 }
 
 .nav div {

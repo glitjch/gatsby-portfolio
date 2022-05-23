@@ -4,6 +4,6 @@
   align-items: center;
   gap: calc(1rem - 0.1vw);
   min-height: 5rem;
-  background-color: rgba(69, 127, 173, 1);
+  background-color: rgba(69, 127, 173, 0.1);
 
 }
