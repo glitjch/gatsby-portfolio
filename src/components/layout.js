@@ -8,9 +8,8 @@ const Layout = ({ pageTitle, children }) => {
   // VIEW
   return (
     <div className={classes.container}>
-      <Navbar />
       <title>{pageTitle}</title>
-      
+      <Navbar />
       <main>
         <h1>{pageTitle}</h1>
         {children}

@@ -1,8 +1,17 @@
 import React from 'react';
 
 const hero = () => {
+  
+  // to add
+  // logo
+  // social media bar side
+  // About
+
   return (
-    <div>hero0000000</div>
+    <header>
+      hero0000000
+      
+    </header>
   )
 }
 
