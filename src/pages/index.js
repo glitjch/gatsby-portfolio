@@ -1,19 +1,22 @@
 import * as React from "react"
 import { Link } from 'gatsby';
 
+import Layout from '../components/layout';
+import Hero from '../components/hero';
+
 // COMPONENT
 const IndexPage = () => {
 
   // VIEW
   return (
-    <main>
-      <title>TJ Phan - Software Engineer</title>
-      <Link to='about'>About</Link>
+    <Layout pageTitle={"TJ Phan - Software Engineer"}>
       <h1>Hi, I'm TJ!</h1>
+      <Hero />
       <p>Canadian Software Engineer from Coquitlam, British Columbia.</p>
       <p>I'm passionate about building software services that help communities to thrive and support pursuits of personal wellbeing.</p>
       <p>ESG-focused (Environment-Social-Governance).</p>
-    </main>
+      <Link to='about'>About</Link>
+    </Layout>
   )
 }
 
