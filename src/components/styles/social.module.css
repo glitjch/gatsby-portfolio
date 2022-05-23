@@ -1,5 +1,8 @@
 .social {
+  position: absolute;
+  right: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  gap: calc(1rem + 1.0vw)
 }

@@ -24,7 +24,7 @@ html, body {
   padding: 0;
 
   border-style: solid;
-  border-color: red;
+  /* border-color: red; */
   background-color: rgba(6, 17, 59, 1);
 
 

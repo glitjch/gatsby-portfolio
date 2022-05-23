@@ -10,9 +10,18 @@
   padding: 0;
 
   max-width: 100%;
-  min-height: 40rem;
+  min-height: 30rem;
   
   background-color: rgba(6, 17, 59, 1);
   color: whitesmoke;
 }
 
+.hero div {
+  min-width: 75%;
+}
+
+.logo {
+  position: absolute;
+  top: 5rem;
+  z-index: -1;
+}
