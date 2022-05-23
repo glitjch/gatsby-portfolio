@@ -11,9 +11,11 @@ const IndexPage = () => {
   // VIEW
   return (
     <Layout pageTitle={"TJ Phan - Software Engineer"}>
-      <h1>Hi, I'm TJ!</h1>
       <Hero />
       <Work />
+      <h2>Hello</h2>
+      <h3>Hello</h3>
+      <h4>Hello</h4>
       <p>Canadian Software Engineer from Coquitlam, British Columbia.</p>
       <p>I'm passionate about building software services that help communities to thrive and support pursuits of personal wellbeing.</p>
       <p>ESG-focused (Environment-Social-Governance).</p>
