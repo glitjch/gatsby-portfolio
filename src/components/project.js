@@ -1,11 +1,14 @@
 import React from 'react'
 
-import github from '../images/github.svg'
-import demo from '../images/demo.svg'
+import * as classes from './styles/project.module.css';
 
+import github from '../images/github.svg';
+import demo from '../images/demo.svg';
+
+// COMPONENT
 const Project = ({projectTitle, projectDesc, projectStack, projectImage, projectGithub, projectDemo}) => {
   return (
-    <article>
+    <article className={classes.project}>
     <div>
       <p>Featured Project</p>
       <h3>{projectTitle}</h3>
@@ -18,7 +21,7 @@ const Project = ({projectTitle, projectDesc, projectStack, projectImage, project
         <img src={demo} alt='demo'/>
       </a>
     </div>
-    <img src={projectImage} className='workimg' alt='work 01'/>
+    <img src={projectImage} className='workImg' alt='work 01'/>
   </article>
   )
 }

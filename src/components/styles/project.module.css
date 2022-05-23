@@ -1,0 +1,8 @@
+.project {
+  display: flex;
+  background-color: aqua;
+  /* align-self: flex-start; */
+
+  min-width: 90%;
+  min-height: 25rem;
+}

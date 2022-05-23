@@ -10,3 +10,12 @@
   background-color: rgba(69, 127, 173, 0.1);
 
 }
+
+.work section {
+  display: flex;
+  flex-direction: column;
+  gap: calc(1rem + 5.0vw);
+  
+  min-width: 75%;
+  border-style: solid;
+}
