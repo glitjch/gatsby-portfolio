@@ -7,15 +7,23 @@
   max-width: 100%;
   min-height: 5rem;
   
-  background-color: rgba(69, 127, 173, 0.1);
+  background-color: rgba(65, 95, 151, 1);
+}
 
+.work h2 {
+  color: white;
 }
 
 .work section {
   display: flex;
   flex-direction: column;
   gap: calc(1rem + 5.0vw);
-  
-  min-width: 75%;
-  border-style: solid;
+  justify-content: center;
+  align-items: center;
+
+
+  width: 75%;
+  background-color: rgba(65, 95, 151, 1);
+
+
 }
