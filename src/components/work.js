@@ -15,6 +15,7 @@ import Tweetr from '../images/tweetr.gif';
 const Work = () => {
   return (
     <div className={classes.work}>
+      <a id="work"/>
       <h2>Case Studies</h2>
       <section>
         <Project 
