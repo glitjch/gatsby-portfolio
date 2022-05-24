@@ -1,0 +1,110 @@
+.project {
+  background-color: rgba(65, 95, 151, 1);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 20rem;
+
+  position: relative;
+  z-index: 2;
+}
+
+.project_preview {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+
+  max-width: 100%;
+  /* width: calc(50% + 42.0vw); */
+  height: clamp(100%, 1rem, 30%);
+  object-fit: contain;
+  object-position: left;
+
+  box-shadow: 0 20px 30px -10px black;
+  display: flex;
+
+  text-align: left;
+  left: 0;
+ 
+  
+}
+
+
+.project div {
+  position: absolute;
+  z-index: 4;
+  bottom: 20%;
+  right: 0;
+  text-align: right;
+
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  
+  width: clamp(50%, 8vw, 33%);
+  overflow-y:visible;
+  
+  max-height: 80%;
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.project p:first-child {
+  font-size:medium;
+}
+
+.project h3 {
+  color: white;
+  font-weight: 600;
+  line-height: 1.2rem;
+
+  margin-top: 0.1rem;
+  margin-bottom: 1.2rem;
+}
+
+/* links to project */
+.project aside {
+  position: absolute;
+  z-index: 5;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  
+  line-height: 1.5;
+  width: 91%;
+}
+
+.project aside a img{
+  width: 2rem;
+}
+
+.project aside img:hover {
+  fill: rgba(71, 188, 199, 1);
+  transition: 0.3s;
+}
+
+
+.project span {
+  min-width: 20rem;
+  min-height: calc(7rem + (100 - 2.2vw));
+  padding: 2rem;
+  
+  font-size: calc(1.0rem + 0.3vw);
+  
+  overflow-wrap:break-word;
+
+  background-color: rgba(14, 34, 86, 1);
+  box-shadow: 0 20px 30px -15px black;
+}
+
+.project p:nth-child(4) {
+  margin-top: calc(3rem - 1.8vw);
+  color: antiquewhite;
+  font-size: large;
+  white-space: nowrap;
+  word-spacing: 0.5rem;
+}

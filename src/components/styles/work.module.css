@@ -1,0 +1,30 @@
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(1rem - 0.1vw);
+
+  max-width: 100%;
+  min-height: 5rem;
+  
+  background-color: rgba(65, 95, 151, 1);
+  
+  padding-top: 10rem;
+  padding-bottom: 12rem;
+}
+
+.work h2 {
+  color: white;
+}
+
+.work section {
+  display: flex;
+  flex-direction: column;
+  gap: calc(1rem + 5.0vw);
+  justify-content: center;
+  align-items: center;
+
+  width: 75%;
+  background-color: rgba(65, 95, 151, 1);
+
+}

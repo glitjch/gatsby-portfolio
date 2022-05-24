@@ -1,18 +1,24 @@
 import React from 'react';
+import * as classes from './styles/hero.module.css';
+import Social from './social';
 
-const hero = () => {
-  
-  // to add
-  // logo
-  // social media bar side
-  // About
+import logo from '../images/hero-logo.svg';
+
+
+// COMPONENT
+const Hero = () => {
 
   return (
-    <header>
-      hero0000000
-      
+    <header className={classes.hero}>
+      <div>
+        <h1>TJ Phan</h1>
+        <h2>Software Developer</h2>
+        <button type='button'>About Me</button>
+      </div>
+      <img className={classes.logo} src={logo} alt='logo'/>
+      <Social />
     </header>
   )
 }
 
-export default hero;
+export default Hero;

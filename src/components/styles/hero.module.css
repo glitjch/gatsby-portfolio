@@ -1,0 +1,45 @@
+.hero {
+  position: relative;
+  display: flex;
+  z-index: 0;
+
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+
+  max-width: 100%;
+  height: clamp(45rem, 5vw, 30rem);
+  
+  background-color: rgba(6, 17, 59, 1);
+  color: whitesmoke;
+}
+
+.hero h1 {
+  font-size: clamp(5.0rem, 5.0vw, 2.5rem); 
+}
+.hero div {
+  min-width: 75%;
+}
+
+.hero button {
+  background-color: rgba(71, 188, 199, 1);
+  border-style: none;
+  border-radius: 0.3rem;
+  
+  font-size: 1rem;
+  color: whitesmoke;
+
+  
+  /* transform: rotate(-90deg); */
+  max-height: 2rem;
+  min-width: 6rem;
+
+}
+
+.logo {
+  position: absolute;
+  top: 5rem;
+  z-index: -1;
+}
