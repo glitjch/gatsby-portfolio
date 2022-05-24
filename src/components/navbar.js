@@ -4,19 +4,19 @@ import logo from '../images/nav-logo.svg';
 
 import { Link } from 'gatsby';
 
-const Navbar = () => {
+const Navbar = ( {setAbout} ) => {
   
   return (
     <nav className={classes.nav}> 
     <a id="top"></a>
-    <div>
+    <div> 
       <a href='/'>
         <img src={logo} alt='logo for tj phan'/>
       </a>
       <ul>
         <li><Link to="#work">Work</Link></li>
         <li><Link to="#">Experiment</Link></li>
-        <li><Link to="#">Contact</ Link></li>
+        <li><Link to="#" onClick={() => setAbout(true)}>Contact</ Link></li>
       </ul>
     </div>
     </nav>

@@ -14,8 +14,7 @@ import Tweetr from '../images/tweetr.gif';
 // COMPONENT
 const Work = () => {
   return (
-    <div className={classes.work}>
-      <a id="work"/>
+    <div className={classes.work} id="work">
       <h2>Case Studies</h2>
       <section>
         <Project 
@@ -51,4 +50,4 @@ const Work = () => {
   )
 }
 
-export default Work
+export default Work;
