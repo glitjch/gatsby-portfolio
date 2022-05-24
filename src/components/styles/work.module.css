@@ -8,7 +8,9 @@
   min-height: 5rem;
   
   background-color: rgba(65, 95, 151, 1);
-  padding-bottom: 10rem;
+  
+  padding-top: 10rem;
+  padding-bottom: 12rem;
 }
 
 .work h2 {
