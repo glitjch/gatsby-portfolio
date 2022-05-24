@@ -9,7 +9,9 @@ const Footer = () => {
     <footer className={classes.footer}>
       
       <section>
-        <img src={logo} alt='logo for tj phan'/>
+        <a href='#top'>
+          <img src={logo} alt='logo for tj phan'/>
+        </a>
         <ul>
           <li>Twitter</li>
           <li>LinkedIn</li>

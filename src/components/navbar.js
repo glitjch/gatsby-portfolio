@@ -7,7 +7,7 @@ import { Link } from 'gatsby';
 const Navbar = () => {
   
   return (
-    <nav className={classes.nav}> 
+    <nav className={classes.nav}  id={"top"}> 
     <div>
       <img src={logo} alt='logo for tj phan'/>
       <ul>
