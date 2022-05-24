@@ -1,0 +1,6 @@
+.action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgba(6, 17, 59, 1);
+}

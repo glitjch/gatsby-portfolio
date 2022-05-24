@@ -8,6 +8,7 @@
   min-height: 5rem;
   
   background-color: rgba(65, 95, 151, 1);
+  padding-bottom: 4rem;
 }
 
 .work h2 {
@@ -21,9 +22,7 @@
   justify-content: center;
   align-items: center;
 
-
   width: 75%;
   background-color: rgba(65, 95, 151, 1);
-
 
 }
