@@ -6,6 +6,7 @@ import Navbar from '../components/navbar'
 import Hero from '../components/hero';
 import Work from '../components/work';
 import Action from '../components/action';
+import Footer from '../components/footer'
 
 // COMPONENT
 const IndexPage = () => {
@@ -17,8 +18,7 @@ const IndexPage = () => {
       <Hero />
       <Work />
       <Action />
-      
-      <Link to='about'>About</Link>
+      <Footer />
     </Layout>
   )
 };

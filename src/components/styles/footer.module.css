@@ -1,0 +1,13 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  min-height: 30rem;
+
+
+  background-color: rgba(6, 17, 59, 1);
+}
