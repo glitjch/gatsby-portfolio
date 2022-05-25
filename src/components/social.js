@@ -13,12 +13,21 @@ import twitter from '../images/twitter.svg';
 const Social = () => {
   return (
     <ul className={classes.social}>
-      <img src={github} alt="social"/>
-      <img src={linkedin} alt="social"/>
-      <StaticImage className={classes.hi} src="twitter.svg" alt='social'/>
-      <img src={dev} alt="social"/>
-      <img src={angel} alt="social"/>
-      <img src={twitter} alt="social"/>
+      <a href='https://github.com/glitjch' target={"_blank"}>
+        <img src={github} alt="social github"/>
+      </a>
+      <a href='https://www.linkedin.com/in/tj-phan/' target={"_blank"}>
+        <img src={linkedin} alt="social"/>
+      </a>
+      <a href='https://dev.to/glitjch' target={"_blank"}>
+        <img src={dev} alt="social"/>
+      </a>
+      <a href='https://angel.co/u/tj-phan' target={"_blank"}>
+        <img src={angel} alt="social"/>
+      </a>
+      <a href='https://twitter.com/hellotjphan' target={"_blank"}>
+        <img src={twitter} alt="social"/>
+      </a>
     </ul>
   )
 }
