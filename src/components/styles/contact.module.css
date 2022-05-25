@@ -55,6 +55,7 @@
   background: linear-gradient(90.99deg, #47BCC7 -199.5%, #FFFFFF 38.72%);
 }
 
+
 .contact input {
   max-width: 25rem;
   height: calc(2.5rem + 0.5vw);
@@ -65,15 +66,20 @@
   min-height: 15rem;
 }
 
+.contact input:focus, textarea:focus {
+  outline: none;
+  border: 0.2rem solid rgba(71, 188, 199, 1);
+}
+
 .contact button {
   position: absolute;
   bottom: 5rem;
-
+  
   background-color: rgba(71, 188, 199, 1);
   border-style: none;
   border-radius: 0.3rem;
   
-  font-size: 1rem;
+  font-size: clamp(1.0rem, 4vw, 2.0rem);
   color: whitesmoke;
 
   height: clamp(2rem, 6vw, 6rem);
