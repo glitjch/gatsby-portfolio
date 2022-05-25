@@ -1,0 +1,9 @@
+.contact {
+  width: 10rem;
+  height: 8rem;
+  background-color: blue;
+
+  color: antiquewhite;
+
+  overflow: scroll;
+}
