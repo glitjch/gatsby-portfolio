@@ -1,0 +1,11 @@
+.closeIcon {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+
+  height: 2rem;
+  width: 2rem;
+
+  
+  color: white;
+}
