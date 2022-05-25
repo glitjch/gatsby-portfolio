@@ -18,15 +18,23 @@ const handleMessage = (e) => {
   setMessage(e.target.value);
 };
 
+
 const handleSubmit = (e) => {
   e.preventDefault();
+  if ([name, email, message].some((val) => val.length === 0)) return;
+  if (name.length < 3) return;
+  if (email.length < 6) return;
+  if (message.length < 10) return;
+
+
   setName("");
   setEmail("");
   setMessage("");
+  return
 };
 
   return (
-    <form onSubmit={() => handleSubmit} className={classes.contact}>
+    <form onSubmit={handleSubmit} className={classes.contact}>
       <h2>Contact</h2>
       <label htmlFor='name'>Add your name</label>
       <input name='name' value={name} onChange={handleName}/>
