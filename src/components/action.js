@@ -1,10 +1,10 @@
 import React from 'react'
 import * as classes from './styles/action.module.css';
 
-const Action = () => {
+const Action = ({ setAction }) => {
   return (
     <section className={classes.action}>
-      <button type='button'>
+      <button type='button' onClick={() => setAction("contact")}>
         <h2>Say Hello</h2>  
       </button>
       <p>Proud Canadian Software Engineer from Coquitlam, British Columbia.</p>

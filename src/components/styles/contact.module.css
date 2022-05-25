@@ -1,5 +1,5 @@
 .contact {
-  position: absolute;
+  position: fixed;
   z-index: 7;
 
   display: flex;
@@ -30,11 +30,10 @@
   z-index: -1;
 
   margin: 0;
-  /* right: 0; */
   top: 0;
 
   font-size: 20rem;
-  opacity: 50%;
+  opacity: 5%;
 }
 
 .contact label {
@@ -77,13 +76,15 @@
   
   background-color: rgba(71, 188, 199, 1);
   border-style: none;
-  border-radius: 0.3rem;
+  border-radius: 0.2rem;
   
   font-size: clamp(1.0rem, 4vw, 1.7rem);
   color: whitesmoke;
 
-  height: clamp(2rem, 6vw, 6rem);
+  height: clamp(2rem, 4vw, 3.5rem);
   width: clamp(6rem, 0.1vw, 10rem);
+
+  cursor: pointer;
 
   align-self: flex-end;
 }

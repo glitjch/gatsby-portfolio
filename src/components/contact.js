@@ -30,11 +30,12 @@ const handleSubmit = (e) => {
   setName("");
   setEmail("");
   setMessage("");
-  return
+  return;
 };
 
   return (
     <form onSubmit={handleSubmit} className={classes.contact}>
+      <div></div>
       <h2>Contact</h2>
       <label htmlFor='name'>Add your name</label>
       <input name='name' value={name} onChange={handleName}/>

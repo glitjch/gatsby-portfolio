@@ -14,17 +14,17 @@ import Contact from "../components/contact";
 
 // COMPONENT
 const IndexPage = () => {
-  const [about, setAbout] = useState(false)
+  const [ mount, setMount ] = useState("")
 
   // VIEW
   return (
     <Layout pageTitle={"TJ Phan - Software Engineer"}>
-      {about && <About />}
-      <Contact />
-      <Navbar about={about} setAbout={setAbout}/>
-      <Hero />
+      {mount === "about" && <About />}
+      {mount === "contact" && <Contact />}
+      <Navbar setContact={setMount}/>
+      <Hero setAbout={setMount}/>
       <Work />
-      <Action />
+      <Action setAction={setMount}/>
       <Footer />
     </Layout>
   )
