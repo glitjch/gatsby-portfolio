@@ -46,13 +46,18 @@
   padding: 1rem;
   margin-bottom: 3rem;
 
+  border-radius: 7px;
+  border-style: none;
+
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
 
+  background: linear-gradient(90.99deg, #47BCC7 -199.5%, #FFFFFF 38.72%);
+}
+
+.contact input {
   max-width: 25rem;
   height: calc(2.5rem + 0.5vw);
-  
-  background: linear-gradient(90.84deg, #47BCC7 -135.09%, #FFFFFF 84.74%);
 }
 
 .contact textarea {
@@ -61,6 +66,9 @@
 }
 
 .contact button {
+  position: absolute;
+  bottom: 5rem;
+
   background-color: rgba(71, 188, 199, 1);
   border-style: none;
   border-radius: 0.3rem;
@@ -68,9 +76,8 @@
   font-size: 1rem;
   color: whitesmoke;
 
-  height: clamp(2rem, 0.1vw, 4rem);
+  height: clamp(2rem, 6vw, 6rem);
   width: clamp(6rem, 0.1vw, 10rem);
 
   align-self: flex-end;
-  margin-right: calc(15rem - 1.5vw);
 }

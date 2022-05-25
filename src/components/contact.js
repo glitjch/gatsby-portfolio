@@ -33,7 +33,6 @@ const handleSubmit = (e) => {
       <label htmlFor='message'>finally your message</label>
       <textarea name='message' value={message} onChange={handleMessage}/>
       <button type='submit'>send</button>
-      {message && message}
     </form>
   );
 };
