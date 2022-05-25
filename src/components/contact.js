@@ -19,12 +19,14 @@ const handleMessage = (e) => {
 };
 
 const handleSubmit = (e) => {
-  e.preventDefault()
-
-}
+  e.preventDefault();
+  setName("");
+  setEmail("");
+  setMessage("");
+};
 
   return (
-    <form onSubmit={handleSubmit} className={classes.contact}>
+    <form onSubmit={() => handleSubmit} className={classes.contact}>
       <h2>Contact</h2>
       <label htmlFor='name'>Add your name</label>
       <input name='name' value={name} onChange={handleName}/>

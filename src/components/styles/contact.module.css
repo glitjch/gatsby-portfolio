@@ -79,7 +79,7 @@
   border-style: none;
   border-radius: 0.3rem;
   
-  font-size: clamp(1.0rem, 4vw, 2.0rem);
+  font-size: clamp(1.0rem, 4vw, 1.7rem);
   color: whitesmoke;
 
   height: clamp(2rem, 6vw, 6rem);
