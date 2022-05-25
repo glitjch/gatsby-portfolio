@@ -18,12 +18,12 @@ const IndexPage = () => {
   // VIEW
   return (
     <Layout pageTitle={"TJ Phan - Software Engineer"}>
-      <Navbar setAbout={setAbout}/>
+      {about && <About />}
+      <Navbar about={about} setAbout={setAbout}/>
       <Hero />
       <Work />
       <Action />
       <Footer />
-      {about && <About />}
     </Layout>
   )
 };

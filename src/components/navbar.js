@@ -4,7 +4,7 @@ import logo from '../images/nav-logo.svg';
 
 import { Link } from 'gatsby';
 
-const Navbar = ( {setAbout} ) => {
+const Navbar = ( {about, setAbout} ) => {
   
   return (
     <nav className={classes.nav}> 
@@ -16,7 +16,7 @@ const Navbar = ( {setAbout} ) => {
       <ul>
         <li><Link to="#work">Work</Link></li>
         <li><Link to="#">Experiment</Link></li>
-        <li><Link to="#" onClick={() => setAbout(true)}>Contact</ Link></li>
+        <li onClick={() => setAbout(!about)}><Link to="#">Contact</ Link></li>
       </ul>
     </div>
     </nav>
