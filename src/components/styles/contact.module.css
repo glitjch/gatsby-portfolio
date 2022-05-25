@@ -1,9 +1,76 @@
 .contact {
-  width: 10rem;
-  height: 8rem;
-  background-color: blue;
+  position: absolute;
+  z-index: 7;
 
-  color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  
+  top: 15vh;
+  left: 10vw; 
+  
+  width: clamp(80vw, 5rem, 80vw);
+  height: clamp(40rem, 5vw, 60rem);
 
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  
+  box-shadow: 0 20px 30px -10px black;
+  background-color: rgba(65, 95, 151, 0.99);
+  
+  color: whitesmoke;
+
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: calc(10% - 0.2vw);
+  padding-right: calc(10% - 0.2vw);
+}
+
+.contact h2 {
+  position: absolute;
+  z-index: -1;
+
+  margin: 0;
+  /* right: 0; */
+  top: 0;
+
+  font-size: 20rem;
+  opacity: 50%;
+}
+
+.contact label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.contact input, textarea {
+  padding: 1rem;
+  margin-bottom: 3rem;
+
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+
+  max-width: 25rem;
+  height: calc(2.5rem + 0.5vw);
+  
+  background: linear-gradient(90.84deg, #47BCC7 -135.09%, #FFFFFF 84.74%);
+}
+
+.contact textarea {
+  max-width: 40rem;
+  min-height: 15rem;
+}
+
+.contact button {
+  background-color: rgba(71, 188, 199, 1);
+  border-style: none;
+  border-radius: 0.3rem;
+  
+  font-size: 1rem;
+  color: whitesmoke;
+
+  height: clamp(2rem, 0.1vw, 4rem);
+  width: clamp(6rem, 0.1vw, 10rem);
+
+  align-self: flex-end;
+  margin-right: calc(15rem - 1.5vw);
 }

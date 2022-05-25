@@ -9,6 +9,7 @@ import Work from '../components/work';
 import Action from '../components/action';
 import Footer from '../components/footer';
 import About from '../components/about';
+import Contact from "../components/contact";
 
 
 // COMPONENT
@@ -19,6 +20,7 @@ const IndexPage = () => {
   return (
     <Layout pageTitle={"TJ Phan - Software Engineer"}>
       {about && <About />}
+      <Contact />
       <Navbar about={about} setAbout={setAbout}/>
       <Hero />
       <Work />
