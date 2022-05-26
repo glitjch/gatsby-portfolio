@@ -42,7 +42,7 @@ const Work = () => {
           projectDesc={"Designed for busy appointment schedulers, the Scheduler helps experts and novices find their booking routines made easily managed with a few clicks."}
           projectStack={"ReachJS Axios Cypress Storybook Jest"}
           projectGithub={"https://github.com/glitjch/scheduler"}
-          projectDemo={"#"}
+          projectDemo={""}
           />
         <Project 
           projectTitle={"Tweetr"}

@@ -11,12 +11,16 @@ const Project = ({projectTitle, projectDesc, projectStack, projectImage, project
     <article className={classes.project}>
       <div className={classes.visuals}>
         <aside>
-          <a href={projectDemo} title={projectTitle + " demo link"} target={"_blank"}>
-            <img src={demo} alt='demo'/>
-          </a>
-          <a href={projectGithub} title={projectTitle + " Github link"} target={"_blank"}>
-            <img src={github} alt='github'/>
-          </a>
+          {projectDemo &&
+            <a href={projectDemo} title={projectTitle + " demo link"} target={"_blank"}>
+              <img src={demo} alt='demo'/>
+            </a>
+          }
+          {projectGithub &&
+            <a href={projectGithub && projectGithub} title={projectTitle + " Github link"} target={"_blank"}>
+              <img src={github} alt='github'/>
+            </a>
+          }
         </aside>
         <img src={projectImage} className={classes.project_preview} alt='work 01'/>
       </div>
