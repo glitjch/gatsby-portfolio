@@ -31,10 +31,10 @@
   font-size: 1rem;
   color: whitesmoke;
 
-  
-  /* transform: rotate(-90deg); */
   max-height: 2rem;
   min-width: 6rem;
+
+  cursor: pointer;
 
 }
 

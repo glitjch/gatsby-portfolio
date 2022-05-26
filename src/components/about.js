@@ -11,15 +11,22 @@ import TechTypescript from '../images/tech-typescript.svg';
 import TechHtml from '../images/tech-html.svg';
 import TechCss from '../images/tech-css.svg';
 
+import CloseIcon from './closeIcon';
+
+import { useGlobalContext } from './layout';
 
 
 const About = () => {
-  return (
+  const { mount } = useGlobalContext();
+  return mount === "about" && (
     <div className={classes.about}>
-      <h2>About Me</h2>
+      <CloseIcon />
+      <div className={classes.backdrop}>
+        <h2>About Me</h2>
+      </div>
       <h5>Full Stack Software Engineer</h5>
-      <p>I architecture web applications with human factor. I work with all levels of complexity to produce simplicity at its best, whether that's designing your frontend web presence or structuring your server performance. Coding is an online wonderland of possibilities, and helping others realize theirs is my worldly passion.</p>
-      <p>Say hi, I'm super friendly</p>
+        <p>I architect web applications with human factor. I work with all levels of complexity to produce simplicity at its best, whether that's designing your frontend web presence or structuring your server performance. Coding is an online wonderland of possibilities, and helping others realize theirs is my worldly passion. <br/>
+        I'm super friendly, say hello. </p>
       <ul>
         <img src={TechJS} alt='tech'/>
         <img src={TechReact} alt='tech'/>
