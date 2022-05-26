@@ -16,10 +16,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: 0.5s;
   }
 }
-
-
 
 /* container for image and links */
 .visuals {
@@ -59,9 +58,10 @@
   }
 }
 
-
 .visuals:hover > aside {
-  visibility: visible;
+  opacity: 1;
+  transition: 0.3s;
+
 }
 
 /* gif/image of the project */
@@ -81,11 +81,14 @@
 
   text-align: left;
   left: 0;
+
+  transition: 0.5s;
 }
 
 /* links to project */
 .project aside {
-  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
 
   position: absolute;
   z-index: 5;
@@ -96,10 +99,11 @@
   align-items: center;
   gap: 3.5rem;
   
-  background-color: rgba(0, 0, 0, 0.218);
+  background-color: rgba(6, 17, 59, 0.41);
   line-height: 1.5;
   height: 100%;
   width: 100%;
+
 }
 
 /* links to github or demo */
@@ -131,7 +135,7 @@
     line-height: 2.5rem;
     height: 100%;
     background-size: cover/50px 500px;
-    transition: 0.2s;
+    transition: 0.4s;
     padding: 1rem 5rem;
   }
 }
@@ -150,6 +154,9 @@
 
   background-color: rgba(14, 34, 86, 1);
   box-shadow: 0 20px 30px -15px black;
+
+  transition: 0.5s;
+  
 }
 
 
@@ -163,6 +170,7 @@
   word-spacing: 0.5rem;
   min-width: 70vw;
   height: 100%;
+  transition: 0.5s;
   
   /* overflow: hidden; */
 }
@@ -170,8 +178,10 @@
 @media only screen and (max-width: 800px) {
   .project span {
     text-align: left;
+    transition: 0.5s;
   }
   .project p:nth-child(4) {
     text-align: center;
+    transition: 0.5s;
   }
 }
