@@ -1,5 +1,5 @@
+/* project container */
 .project {
-  background-color: rgba(65, 95, 151, 1);
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -11,15 +11,57 @@
   margin-bottom: 6rem;
 }
 
+@media only screen and (max-width: 700px) {
+  .project {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
 /* container for image and links */
 .visuals {
   position: relative;
   width: clamp(37rem, 55%, 40rem);
 }
 
+/* container for description of project */
+.description {
+  position: absolute;
+  z-index: 4;
+  bottom: 20%;
+  right: 0;
+  text-align: right;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  
+  width: clamp(50%, 8vw, 33%);
+  overflow-y:visible;
+  
+  max-height: 80%;
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+@media only screen and (max-width: 800px) {
+  .visuals {
+    position: inherit;
+    width: 100%;
+    height: clamp(15rem, 20vw, 20rem);
+  }
+  .description {
+    position:inherit;
+    align-items: center;
+  }
+}
+
+
 .visuals:hover > aside {
   visibility: visible;
-
 }
 
 /* gif/image of the project */
@@ -29,7 +71,7 @@
   left: 0;
 
   max-width: 100%;
-  height: clamp(100%, 1rem, 30%);
+  height: clamp(100%, 1rem, 50%);
 
   object-fit: contain;
   object-position: left;
@@ -52,7 +94,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2.5rem;
+  gap: 3.5rem;
   
   background-color: rgba(0, 0, 0, 0.218);
   line-height: 1.5;
@@ -70,26 +112,6 @@
   transition: 0.3s;
 }
 
-/* description of project */
-.description {
-  position: absolute;
-  z-index: 4;
-  bottom: 20%;
-  right: 0;
-  text-align: right;
-  
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  
-  width: clamp(50%, 8vw, 33%);
-  overflow-y:visible;
-  
-  max-height: 80%;
-  color: white;
-  background-color: rgba(255, 255, 255, 0);
-}
-
 .project p:first-child {
   font-size:medium;
 }
@@ -97,18 +119,30 @@
 .project h3 {
   color: white;
   font-weight: 600;
-  line-height: 1.2rem;
+  line-height: 1.5rem;
 
   margin-top: 0.1rem;
   margin-bottom: 1.2rem;
 }
 
+@media only screen and (max-width: 1200px) {
+  .project h3 {
+    background: linear-gradient(287.1deg, rgba(65, 95, 151, 0.54) 34.65%, rgba(71, 182, 196, 0.41) 89.01%, rgba(255, 255, 255, 0.15) 111.25%) no-repeat;
+    line-height: 2.5rem;
+    height: 100%;
+    background-size: cover/50px 500px;
+    transition: 0.2s;
+    padding: 1rem 5rem;
+  }
+}
 
 /* project blurb */
 .project span {
   min-width: 20rem;
   min-height: calc(7rem + (100 - 2.2vw));
   padding: 2rem;
+
+  line-height: 1.5rem;
   
   font-size: calc(1.0rem + 0.3vw);
   
@@ -118,11 +152,26 @@
   box-shadow: 0 20px 30px -15px black;
 }
 
+
 /* tech stack */
 .project p:nth-child(4) {
   margin-top: calc(3rem - 1.8vw);
   color: antiquewhite;
   font-size: large;
+  
   white-space: nowrap;
   word-spacing: 0.5rem;
+  min-width: 70vw;
+  height: 100%;
+  
+  /* overflow: hidden; */
+}
+
+@media only screen and (max-width: 800px) {
+  .project span {
+    text-align: left;
+  }
+  .project p:nth-child(4) {
+    text-align: center;
+  }
 }
