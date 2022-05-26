@@ -11,6 +11,14 @@
   margin-bottom: 6rem;
 }
 
+/* container for image and links */
+.visuals {
+  position: relative;
+  background-color: aqua;
+  border-style: solid;
+  width: clamp(37rem, 55%, 40rem);
+}
+
 /* gif/image of the project */
 .project_preview {
   position: absolute;
@@ -28,11 +36,36 @@
 
   text-align: left;
   left: 0;
+}
+
+/* links to project */
+.project aside {
+  position: absolute;
+  z-index: 5;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
   
+  line-height: 1.5;
+  height: 100%;
+  width: 50%;
+}
+
+/* links to github or demo */
+.project aside a img{
+  width: 2rem;
+}
+
+.project aside img:hover {
+  fill: rgba(71, 188, 199, 1);
+  transition: 0.3s;
 }
 
 /* description of project */
-.project div {
+.description {
   position: absolute;
   z-index: 4;
   bottom: 20%;
@@ -64,30 +97,6 @@
   margin-bottom: 1.2rem;
 }
 
-/* links to project */
-.project aside {
-  position: absolute;
-  z-index: 5;
-  right: 0;
-  bottom: 0;
-
-  display: flex;
-  justify-content: center;
-  gap: 2.5rem;
-  
-  line-height: 1.5;
-  width: 91%;
-}
-
-/* links to github or demo */
-.project aside a img{
-  width: 2rem;
-}
-
-.project aside img:hover {
-  fill: rgba(71, 188, 199, 1);
-  transition: 0.3s;
-}
 
 /* project blurb */
 .project span {
