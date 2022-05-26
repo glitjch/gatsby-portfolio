@@ -1,0 +1,11 @@
+{
+  "name": "server-for-tj-portfolio",
+  "version": "1.0.0",
+  "description": "Server for TJ's software engineer portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TJ Phan",
+  "license": "ISC"
+}
