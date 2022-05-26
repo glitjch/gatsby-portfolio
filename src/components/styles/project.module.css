@@ -1,5 +1,5 @@
+/* project container */
 .project {
-  background-color: rgba(65, 95, 151, 1);
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -11,28 +11,23 @@
   margin-bottom: 6rem;
 }
 
-/* gif/image of the project */
-.project_preview {
-  position: absolute;
-  z-index: 2;
-  left: 0;
-
-  max-width: 100%;
-  height: clamp(100%, 1rem, 30%);
-
-  object-fit: contain;
-  object-position: left;
-
-  box-shadow: 0 20px 30px -10px black;
-  display: flex;
-
-  text-align: left;
-  left: 0;
-  
+@media only screen and (max-width: 700px) {
+  .project {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+  }
 }
 
-/* description of project */
-.project div {
+/* container for image and links */
+.visuals {
+  position: relative;
+  width: clamp(37rem, 55%, 40rem);
+}
+
+/* container for description of project */
+.description {
   position: absolute;
   z-index: 4;
   bottom: 20%;
@@ -51,37 +46,69 @@
   background-color: rgba(255, 255, 255, 0);
 }
 
-.project p:first-child {
-  font-size:medium;
+@media only screen and (max-width: 800px) {
+  .visuals {
+    position: inherit;
+    width: 100%;
+    height: clamp(15rem, 20vw, 20rem);
+  }
+  .description {
+    position:inherit;
+    align-items: center;
+  }
 }
 
-.project h3 {
-  color: white;
-  font-weight: 600;
-  line-height: 1.2rem;
+.visuals:hover > aside {
+  opacity: 1;
+  transition: 0.3s;
 
-  margin-top: 0.1rem;
-  margin-bottom: 1.2rem;
+}
+
+/* gif/image of the project */
+.project_preview {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+
+  max-width: 100%;
+  height: clamp(100%, 1rem, 50%);
+
+  object-fit: contain;
+  object-position: left;
+
+  box-shadow: 0 20px 30px -10px black;
+  display: flex;
+
+  text-align: left;
+  left: 0;
+
+  transition: 0.5s;
 }
 
 /* links to project */
 .project aside {
+  opacity: 0;
+  transition: 0.5s;
+
   position: absolute;
   z-index: 5;
-  right: 0;
-  bottom: 0;
+  left: 0;
 
   display: flex;
   justify-content: center;
-  gap: 2.5rem;
+  align-items: center;
+  gap: 3.5rem;
   
+  background-color: rgba(6, 17, 59, 0.41);
   line-height: 1.5;
-  width: 91%;
+  height: 100%;
+  width: 100%;
+
 }
 
 /* links to github or demo */
 .project aside a img{
-  width: 2rem;
+  width: 5rem;
 }
 
 .project aside img:hover {
@@ -89,11 +116,37 @@
   transition: 0.3s;
 }
 
+.project p:first-child {
+  font-size:medium;
+}
+
+.project h3 {
+  color: white;
+  font-weight: 600;
+  line-height: 1.5rem;
+
+  margin-top: 0.1rem;
+  margin-bottom: 1.2rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .project h3 {
+    background: linear-gradient(287.1deg, rgba(65, 95, 151, 0.54) 34.65%, rgba(71, 182, 196, 0.41) 89.01%, rgba(255, 255, 255, 0.15) 111.25%) no-repeat;
+    line-height: 2.5rem;
+    height: 100%;
+    background-size: cover/50px 500px;
+    transition: 0.4s;
+    padding: 1rem 5rem;
+  }
+}
+
 /* project blurb */
 .project span {
   min-width: 20rem;
   min-height: calc(7rem + (100 - 2.2vw));
   padding: 2rem;
+
+  line-height: 1.5rem;
   
   font-size: calc(1.0rem + 0.3vw);
   
@@ -101,13 +154,34 @@
 
   background-color: rgba(14, 34, 86, 1);
   box-shadow: 0 20px 30px -15px black;
+
+  transition: 0.5s;
+  
 }
+
 
 /* tech stack */
 .project p:nth-child(4) {
   margin-top: calc(3rem - 1.8vw);
   color: antiquewhite;
   font-size: large;
+  
   white-space: nowrap;
   word-spacing: 0.5rem;
+  min-width: 70vw;
+  height: 100%;
+  transition: 0.5s;
+  
+  /* overflow: hidden; */
+}
+
+@media only screen and (max-width: 800px) {
+  .project span {
+    text-align: left;
+    transition: 0.5s;
+  }
+  .project p:nth-child(4) {
+    text-align: center;
+    transition: 0.5s;
+  }
 }
