@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 
 import * as classes from './styles/contact.module.css';
+import { useGlobalContext } from './layout';
 
 import CloseIcon from './closeIcon';
 
@@ -10,6 +11,7 @@ const Contact = () => {
   const [ name, setName ] = useState("");
   const [ email, setEmail ] = useState("");
   const [ message, setMessage ] = useState("");
+  const { mount } = useGlobalContext();
 
   const handleName = (e) => {
     setName(e.target.value);
@@ -36,7 +38,7 @@ const Contact = () => {
     return;
   };
 
-  return (
+  return mount === "contact" && (
     <form onSubmit={handleSubmit} className={classes.contact}>
       <div>
         <CloseIcon />

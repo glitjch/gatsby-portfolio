@@ -1,6 +1,4 @@
 import * as React from "react";
-import { useState } from "react";
-import { Link } from 'gatsby';
 
 import Layout from '../components/layout';
 import Navbar from '../components/navbar';
@@ -11,20 +9,22 @@ import Footer from '../components/footer';
 import About from '../components/about';
 import Contact from "../components/contact";
 
+import { useGlobalContext } from "../components/layout";
 
 // COMPONENT
 const IndexPage = () => {
-  const [ mount, setMount ] = useState("")
-
+  const { mount } = useGlobalContext();
+  
   // VIEW
   return (
     <Layout pageTitle={"TJ Phan - Software Engineer"}>
+
       {mount === "about" && <About />}
-      {mount === "contact" && <Contact />}
-      <Navbar setContact={setMount}/>
-      <Hero setAbout={setMount}/>
+      <Contact />
+      <Navbar />
+      <Hero />
       <Work />
-      <Action setAction={setMount}/>
+      <Action />
       <Footer />
     </Layout>
   )

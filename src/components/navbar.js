@@ -2,9 +2,12 @@ import React from 'react'
 import * as classes from './styles/navbar.module.css';
 import logo from '../images/nav-logo.svg';
 
+import { useGlobalContext } from "../components/layout";
+
 import { Link } from 'gatsby';
 
-const Navbar = ( { setContact } ) => {
+const Navbar = () => {
+  const { mount, setMount } = useGlobalContext();
   
   return (
     <nav className={classes.nav}> 
@@ -16,7 +19,8 @@ const Navbar = ( { setContact } ) => {
       <ul>
         <li><Link to="#work">Work</Link></li>
         <li><Link to="#">Experiment</Link></li>
-        <li onClick={() => setContact("contact")}><Link to="#">Contact</ Link></li>
+        <li onClick={() => setMount("contact")}><Link to="#">Contact</ Link></li>
+        {mount && mount}
       </ul>
     </div>
     </nav>
