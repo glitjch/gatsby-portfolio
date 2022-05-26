@@ -11,11 +11,16 @@ import TechTypescript from '../images/tech-typescript.svg';
 import TechHtml from '../images/tech-html.svg';
 import TechCss from '../images/tech-css.svg';
 
+import CloseIcon from './closeIcon';
+
+import { useGlobalContext } from './layout';
 
 
 const About = () => {
-  return (
+  const { mount } = useGlobalContext();
+  return mount === "about" && (
     <div className={classes.about}>
+      <CloseIcon />
       <div className={classes.backdrop}>
         <h2>About Me</h2>
       </div>

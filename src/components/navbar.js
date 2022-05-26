@@ -20,7 +20,6 @@ const Navbar = () => {
         <li><Link to="#work">Work</Link></li>
         <li><Link to="#">Experiment</Link></li>
         <li onClick={() => setMount("contact")}><Link to="#">Contact</ Link></li>
-        {mount && mount}
       </ul>
     </div>
     </nav>

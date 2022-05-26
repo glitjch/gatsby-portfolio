@@ -18,8 +18,7 @@ const IndexPage = () => {
   // VIEW
   return (
     <Layout pageTitle={"TJ Phan - Software Engineer"}>
-
-      {mount === "about" && <About />}
+      <About />
       <Contact />
       <Navbar />
       <Hero />
