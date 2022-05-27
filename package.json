@@ -12,7 +12,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "devStart": "nodemon server.js"
   },
   "dependencies": {
     "@emotion/react": "^11.9.0",
@@ -20,6 +21,7 @@
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "@react-icons/all-files": "^4.1.0",
+    "body-parser": "^1.20.0",
     "cors": "^2.8.5",
     "express": "^4.18.1",
     "gatsby": "^4.14.0",
@@ -32,10 +34,14 @@
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^4.14.0",
     "gatsby-transformer-sharp": "^4.14.0",
+    "mustache": "^4.2.0",
     "nodemailer": "^6.7.5",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "sass": "^1.51.0",
     "theme-ui": "^0.14.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
   }
 }

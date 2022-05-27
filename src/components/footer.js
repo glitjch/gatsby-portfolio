@@ -13,18 +13,18 @@ const Footer = () => {
           <img src={logo} alt='logo for tj phan'/>
         </a>
         <ul>
-          <a href='https://github.com/glitjch' target={"_blank"}>
+          <a href='https://github.com/glitjch' target={"_blank"} rel="noreferrer">
             <li>Github</li>
           </a>
-          <a href='https://www.linkedin.com/in/tj-phan/' target={"_blank"}>
+          <a href='https://www.linkedin.com/in/tj-phan/' target={"_blank"} rel="noreferrer">
             <li>LinkedIn</li>      </a>
-          <a href='https://dev.to/glitjch' target={"_blank"}>
+          <a href='https://dev.to/glitjch' target={"_blank"} rel="noreferrer">
             <li>Dev</li>
           </a>
-          <a href='https://angel.co/u/tj-phan' target={"_blank"}>
+          <a href='https://angel.co/u/tj-phan' target={"_blank"} rel="noreferrer">
             <li>AngelList</li>
           </a>
-          <a href='https://twitter.com/hellotjphan' target={"_blank"}>
+          <a href='https://twitter.com/hellotjphan' target={"_blank"} rel="noreferrer">
             <li>Twitter</li>
           </a>
         </ul>
