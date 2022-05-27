@@ -8,8 +8,8 @@ import TechGithub from '../images/tech-github.svg';
 import TechPostgresql from '../images/tech-postgresql.svg';
 import TechRuby from '../images/tech-ruby.svg';
 import TechTypescript from '../images/tech-typescript.svg';
-import TechHtml from '../images/tech-html.svg';
-import TechCss from '../images/tech-css.svg';
+// import TechHtml from '../images/tech-html.svg';
+// import TechCss from '../images/tech-css.svg';
 
 import CloseIcon from './closeIcon';
 
