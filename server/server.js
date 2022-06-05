@@ -19,6 +19,8 @@ app.use("/src", express.static(path.join(__dirname, "src")));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+app.use(express.static("public"))
+
 app.get('/', (req, res) => {
   res.send("hello");
 });
