@@ -71,7 +71,7 @@ const Contact = () => {
       <input name='email' type={"email"} id={"email"} value={email} onChange={handleEmail} required/>
       <label htmlFor='message'>finally your message*</label>
       <textarea name='message' value={message} id={"message"} onChange={handleMessage} 
-      placeholder={"Project inquiries, or even a tea-ffee."}
+      placeholder={"Project inquiries, or a tea-ffee."}
       required/>
       <button type='submit'>{status}</button>
     </form>

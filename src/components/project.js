@@ -12,12 +12,12 @@ const Project = ({projectTitle, projectDesc, projectStack, projectImage, project
       <div className={classes.visuals}>
         <aside>
           {projectDemo &&
-            <a href={projectDemo} title={projectTitle + " demo link"} target={"_blank"}>
+            <a href={projectDemo} title={projectTitle + " demo link"} target={"_blank"} rel={"noreferrer"}>
               <img src={demo} alt='demo'/>
             </a>
           }
           {projectGithub &&
-            <a href={projectGithub && projectGithub} title={projectTitle + " Github link"} target={"_blank"}>
+            <a href={projectGithub && projectGithub} title={projectTitle + " Github link"} target={"_blank"} rel={"noreferrer"}>
               <img src={github} alt='github'/>
             </a>
           }

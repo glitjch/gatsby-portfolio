@@ -9,11 +9,11 @@ import Footer from '../components/footer';
 import About from '../components/about';
 import Contact from "../components/contact";
 
-import { useGlobalContext } from "../components/layout";
+// import { useGlobalContext } from "../components/layout";
 
 // COMPONENT
 const IndexPage = () => {
-  const { mount } = useGlobalContext();
+  // const { mount } = useGlobalContext();
   
   // VIEW
   return (

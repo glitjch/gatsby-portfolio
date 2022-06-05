@@ -6,7 +6,7 @@ import Project from './project';
 
 import Snappy from '../images/snappy.gif';
 import ProxyRitual from '../images/proxy-ritual.gif';
-import PawFive from '../images/pawfive.gif';
+// import PawFive from '../images/pawfive.gif';
 import Scheduler from '../images/schedule-interviewer.gif';
 import Tweetr from '../images/tweetr.gif';
 

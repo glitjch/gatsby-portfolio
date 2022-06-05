@@ -3,8 +3,7 @@ const express = require("express");
 const path = require("path");
 const router = express.Router();
 const bodyParser = require("body-parser");
-// const mustache = require("mustache");
-const cors = require("cors");
+const cors = require('cors');
 const nodemailer = require("nodemailer");
 
 const app = express();
