@@ -4,6 +4,7 @@ module.exports = {
     siteUrl: `https://www.yourdomain.tld`
   },
   plugins: [
+    `gatsby-plugin-recaptcha`,
     "gatsby-plugin-theme-ui", 
     "gatsby-plugin-image", 
     "gatsby-plugin-sitemap", 
