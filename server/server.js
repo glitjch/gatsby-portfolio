@@ -40,21 +40,19 @@ app.post('/send', async (req, res) => {
       user: process.env.NODE_USER, 
       pass: process.env.NODE_PASSWORD,
     },
-    tls: {
-      rejectUnauthorized: false
-    }
   });
 
   // send mail with defined transport object
+  const mailOptions = {
+    from: process.env.NODE_USER, // sender address
+    to:  process.env.NODE_REC, // IMPORTANT
+    subject: "Nodemailer test run", // Subject line
+    text: "Hello world?", // plain text body
+    html: output, // html body
+  };
+
   try {
-    let info = await transporter.sendMail({
-      from: process.env.NODE_USER, // sender address
-      to:  process.env.NODE_REC, // IMPORTANT
-      subject: "Nodemailer test run", // Subject line
-      text: "Hello world?", // plain text body
-      html: output, // html body
-    });
-  
+    let info = await transporter.sendMail(mailOptions);
     console.log("sent!", info.envelope);
     console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
     return res.json(info);

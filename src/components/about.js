@@ -8,8 +8,8 @@ import TechGithub from '../images/tech-github.svg';
 import TechPostgresql from '../images/tech-postgresql.svg';
 import TechRuby from '../images/tech-ruby.svg';
 import TechTypescript from '../images/tech-typescript.svg';
-// import TechHtml from '../images/tech-html.svg';
-// import TechCss from '../images/tech-css.svg';
+import TechHtml from '../images/tech-html.svg';
+import TechCss from '../images/tech-css.svg';
 
 import CloseIcon from './closeIcon';
 
@@ -25,8 +25,8 @@ const About = () => {
         <h2>About Me</h2>
       </div>
       <h5>Full Stack Software Engineer</h5>
-        <p>I architect web applications with human factor. I work with all levels of complexity to produce simplicity at its best, whether that's designing your frontend web presence or structuring your server performance. Coding is an online wonderland of possibilities, and helping others realize theirs is my worldly passion. <br/>
-        I'm super friendly, say hello. </p>
+        <p>I design and build web applications with the world in mind. I start by asking questions about the complexity of personalized needs in order to produce simplicity at its best, whether that's designing client-side web presence or structuring server performance. It's an online wonderland of possibilities, and helping others figure out their digital branding success is my passion. <br/>
+        Super friendly, say hello. </p>
       <ul>
         <img src={TechJS} alt='tech'/>
         <img src={TechReact} alt='tech'/>
@@ -35,6 +35,8 @@ const About = () => {
         <img src={TechPostgresql} alt='tech'/>
         <img src={TechTypescript} alt='tech'/>
         <img src={TechRuby} alt='tech'/>
+        <img src={TechHtml} alt='tech'/>
+        <img src={TechCss} alt='tech'/>
       </ul>
     </div>
   );

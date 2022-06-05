@@ -9,7 +9,7 @@ import CloseIcon from './closeIcon';
 // COMPONENT
 const Contact = () => {
   const [ status, setStatus ] = useState("Submit") 
-  const [ submitResponse, setSubmitResponse ] = useState("Nothing's happening") 
+  const [ submitResponse, setSubmitResponse ] = useState("") 
   const [ name, setName ] = useState("");
   const [ email, setEmail ] = useState("");
   const [ message, setMessage ] = useState("");
@@ -29,10 +29,6 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("Sending...")
-    // if (await [name, email, message].some((val) => val === false)) return;
-    // if (await name.length < 3) return;
-    // if (await email.length < 6) return;
-    // if (await message.length < 10) return;
 
     const { name, email, message } = await e.target.elements;
 
@@ -69,7 +65,6 @@ const Contact = () => {
         <CloseIcon />
       </div>
       <h2>Contact</h2>
-      {submitResponse && submitResponse}
       <label htmlFor='name'>Add your name*</label>
       <input name='name' type={"text"} id={"name"} value={name} onChange={handleName} required/>
       <label htmlFor='email'>then your email*</label>
