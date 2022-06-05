@@ -13,7 +13,7 @@ const Contact = () => {
   const [ name, setName ] = useState("");
   const [ email, setEmail ] = useState("");
   const [ message, setMessage ] = useState("");
-  const { mount } = useGlobalContext();
+  const { mount, setMount } = useGlobalContext();
 
   const handleName = (e) => {
     setName(e.target.value);
@@ -47,7 +47,10 @@ const Contact = () => {
       
       let result = await response.json();
       setSubmitResponse(JSON.stringify(result));
-      setStatus("Submitted!");
+      await setStatus("Sent!");
+      setTimeout(()=> {
+        setMount("")
+      }, 2000)
     }
     catch(err) {
       alert("Fetch error", err)
