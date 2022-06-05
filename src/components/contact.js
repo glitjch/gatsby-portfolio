@@ -39,7 +39,7 @@ const Contact = () => {
     };
 
     try {
-      let response = await fetch("http://localhost:5000/send", {
+      let response = await fetch("https://glitjch-portfolio-server.herokuapp.com/send", {
         method: "POST",
         headers: {"Content-Type": "application/json;charset=utf-8",},
         body: JSON.stringify(details),
