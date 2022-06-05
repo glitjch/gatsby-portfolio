@@ -49,7 +49,10 @@ const Contact = () => {
       setSubmitResponse(JSON.stringify(result));
       setStatus("Submitted!");
     }
-    catch(err) {alert("Fetch error", err)}
+    catch(err) {
+      alert("Fetch error", err)
+      setStatus("Submit")
+    }
     
     setName("");
     setEmail("");
