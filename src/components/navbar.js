@@ -7,11 +7,11 @@ import { useGlobalContext } from "../components/layout";
 import { Link } from 'gatsby';
 
 const Navbar = () => {
-  const { mount, setMount } = useGlobalContext();
+  const { setMount } = useGlobalContext();
   
   return (
     <nav className={classes.nav}> 
-    <a id="top"></a>
+    <span id="top"> </span>
     <div> 
       <a href='/'>
         <img src={logo} alt='logo for tj phan'/>
@@ -19,7 +19,16 @@ const Navbar = () => {
       <ul>
         <li><Link to="#work">Work</Link></li>
         <li><Link to="#">Experiment</Link></li>
-        <li onClick={() => setMount("contact")}><Link to="#">Contact</ Link></li>
+        <li>
+          <span 
+            role={"button"}
+            tabIndex={0}
+            onClick={() => setMount("contact")} 
+            onKeyDown={() => setMount("contact")}
+            >
+            <Link to="#">Contact</ Link>
+          </span>
+          </li>
       </ul>
     </div>
     </nav>
