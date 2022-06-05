@@ -1,3 +1,4 @@
+require('dotenv').config({ path: `${__dirname}/.env` })
 const express = require("express");
 const path = require("path");
 const router = express.Router();
@@ -19,14 +20,9 @@ app.use("/src", express.static(path.join(__dirname, "src")));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-
-const port = process.env.PORT || 5000;
-
 app.get('/', (req, res) => {
   res.send("hello");
 });
-
-
 
 app.post('/send', async (req, res) => {
   const output = `
@@ -36,16 +32,13 @@ app.post('/send', async (req, res) => {
   <p>${req.body.message}</p>
   `;
 
-  let testAccount = await nodemailer.createTestAccount();
+  // let testAccount = await nodemailer.createTestAccount();
 
   let transporter = nodemailer.createTransport({
-    name: "smtp.ethereal.email",
-    host: "smtp.ethereal.email",
-    port: 587,
-    secure: false,
+    service: "gmail",
     auth: {
-      user: testAccount.user, // generated ethereal user
-      pass: testAccount.pass, // generated ethereal password
+      user: process.env.NODE_USER, 
+      pass: process.env.NODE_PASSWORD,
     },
     tls: {
       rejectUnauthorized: false
@@ -53,21 +46,25 @@ app.post('/send', async (req, res) => {
   });
 
   // send mail with defined transport object
-  let info = await transporter.sendMail({
-    from: '"TJ TJ 👻" <TJ@example.com>', // sender address
-    to: "/*FILL EMAIL RECIPIENT HERE*/", // IMPORTANT
-    subject: "Nodemailer test run", // Subject line
-    text: "Hello world?", // plain text body
-    html: output, // html body
-  });
-
-  console.log("sent!", info.envelope);
-  // console.log("Message sent: %s", info.messageId);
-  console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
-  return res.json(info);
-
-
+  try {
+    let info = await transporter.sendMail({
+      from: process.env.NODE_USER, // sender address
+      to:  process.env.NODE_REC, // IMPORTANT
+      subject: "Nodemailer test run", // Subject line
+      text: "Hello world?", // plain text body
+      html: output, // html body
+    });
+  
+    console.log("sent!", info.envelope);
+    console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
+    return res.json(info);
+  } catch (err) {
+    console.log(err);
+  }
 });
+
+
+const port = process.env.PORT || 5000;
 
 app.listen(port, () => {
   console.log("Server running " + port);
