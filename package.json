@@ -16,7 +16,8 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "devStart": "nodemon server.js"
+    "devStart": "nodemon server.js",
+    "test": "echo \"No tests specified\" && exit 0"
   },
   "dependencies": {
     "@emotion/react": "^11.9.0",
