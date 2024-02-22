@@ -1,14 +1,14 @@
 {
-  "name": "home-with-tj",
+  "name": "tj-portfolio",
   "version": "1.0.0",
   "private": true,
-  "description": "home-with-tj",
+  "description": "tj-portfolio-with-gatsby",
   "author": "TJ Phan",
   "keywords": [
     "gatsby"
   ],
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=18.1.0"
   },
   "scripts": {
     "develop": "gatsby develop",
