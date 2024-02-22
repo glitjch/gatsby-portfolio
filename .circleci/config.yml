@@ -8,7 +8,7 @@ orbs:
   # See the Node orb documentation here: https://circleci.com/developer/orbs/orb/circleci/node
   node: circleci/node@5.2
 
-# Orchestrate jobs using workflows ssssss
+# Orchestrate jobs using workflows
 # See: https://circleci.com/docs/workflows/ & https://circleci.com/docs/configuration-reference/#workflows
 workflows:
   sample: # This is the name of the workflow, feel free to change it to better match your workflow.
@@ -18,6 +18,6 @@ workflows:
           # This is the node version to use for the `cimg/node` tag
           # Relevant tags can be found on the CircleCI Developer Hub
           # https://circleci.com/developer/images/image/cimg/node
-          version: '20.11.1'
+          version: '^16.10'
           # If you are using yarn, change the line below from "npm" to "yarn"
           pkg-manager: npm
