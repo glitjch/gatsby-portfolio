@@ -12,7 +12,7 @@
   },
   "scripts": {
     "develop": "gatsby develop",
-    "start": "npm run build && npm run serve",
+    "start": "npm run clean && npm run build && npm run serve",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
